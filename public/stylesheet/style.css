@@ -1,0 +1,305 @@
+<style>
+html, body{
+min-height: 100%;
+overflow-x: hidden;
+font-family: serif;
+font-size: 19px;
+background-color: rgb(194, 194, 194);
+}
+:root{
+--bg-1: #a5a3a5;
+--bg-2: #757475;
+--bg-3: #2e122e;
+--bg-4: #535053;
+}
+
+.bg-default{
+min-width: 100%;
+-webkit-box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+}
+h1,h2,h3{
+font-family: cursive;
+color: var(--bg-3);
+letter-spacing: 3px;
+text-shadow: 1px 2px 2px #2e122e;
+}
+p{
+color: white;
+letter-spacing: 1px;
+}
+.card-footer{
+background-color: #242020;
+border-radius: none;
+text-decoration: none;
+text-align: center;
+}
+
+.card-footer a:hover{
+text-decoration: none;
+color: white;
+}
+.card{
+padding: 30px 10px 20px;
+background: transparent;
+border: none;
+border-radius: none;
+}
+.row{
+padding: 10px;
+}
+.list-group-item{
+color: white;
+background: transparent;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+padding: 25px;
+}
+
+.section-1, .section-2, .section-3, .section-4, .section-5{
+min-width: 100%;
+min-height: 100%;
+}
+
+.testmonials-img{
+vertical-align: middle;
+width: 250px;
+height: 250px;
+border-radius: 50%;
+}
+
+footer{
+background-color: var(--bg-4);
+padding: 0px;
+min-width: 100%;
+}
+
+.copy-right{
+background-color: #202020;
+color: white;
+min-width: 100%;
+border: none;
+border-radius: none;
+}
+.section-1{
+background-color: var(--bg-1);
+padding: 100px 30px 100px;
+}
+.section-1 img{
+min-width: 100%;
+-webkit-box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 4px -9px rgba(0,0,0,0.75);
+
+}
+.section-2{
+min-width: 100%;
+padding: 100px 30px 100px;
+background-image: url('./img/bg-img.jpg');
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.section-3{
+padding: 30px 30px 10px;
+background-color: var(--bg-1);
+text-align: center;
+}
+
+.section-4{
+background-color: #114a79;
+color: white;
+padding: 80px 30px 20px;
+}
+
+.section-4 .btn{
+background-color: var(--bg-3);
+color: var(--bg-1);
+padding: 10px;
+text-align: center;
+width: 30%;
+cursor: pointer;
+border-radius: 10px;
+}
+.section-4 .btn:hover{
+background-color: var(--bg-1);
+color: var(--bg-3);
+}
+
+.section-5{
+background-color: var(--bg-1);
+padding: 80px 30px 30px;
+color: whiet;
+margin-left: -10px;
+text-align: center;
+}
+.section-5 h6, .section-3 h6{
+font-size: 24px;
+font-weight: 400;
+color: var(--bg-3);
+
+}
+.contact-form{
+background: transparent;
+padding: 50px;
+font-size: 17px;
+letter-spacing: 3px;
+color: white;
+}
+label{
+color: white;
+letter-spacing: 5px;
+}
+
+input[type=text], input[type=email], textarea{
+background: transparent;
+width: 100%;
+color: white;
+padding: 13px 16px;
+margin: 10px 0px;
+display: inline-block;
+border-radius: 5px;
+border: solid var(--bg-1) 1px;
+box-sizing: border-box;
+
+}
+
+input[type=submit], .btn{
+background: transparent;
+width: 100%;
+font-size: 20px;
+padding: 10px 20px;
+color: white;
+margin: 80px 0px;
+border-radius: 5px;
+border: solid var(--bg-1) 1px;
+box-sizing: border-box;
+cursor: pointer;
+}
+.btn:hover{
+background-color: var(--bg-3);
+color: var(--bg-1);
+}
+textarea:hover, input:hover{
+background-color: var(--bg-3);
+color: var(--bg-1);
+}
+.modal{
+display: none;
+position: fixed;
+padding: 40px 30px 0px;
+margin: auto;
+width: 100%;
+height: auto;
+top: 0;
+left: 0;
+}
+.modal .contact-form{
+padding: 0px 20px 0px;
+}
+.close{
+color: var(--bg-1);
+float: left;
+font-size: 27px;
+padding: 20px;
+}
+.close:hover, .close:focus{
+color: red;
+text-decoration: none;
+cursor: pointer;
+}
+.body-modal{
+background-color: #114a79;
+margin: auto;
+padding: 10px;
+border: none;
+width: 60%;
+border-radius: 5px;
+}
+
+.social-media{
+padding: 0px 10px 0px;
+}
+.fa{
+padding: 10px;
+font-size: 20px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+margin:  5px 2px;
+border-radius: 5px;
+}
+.fa:hover{
+opacity: 0.6;
+text-decoration: none;
+color: white;
+}
+.fa-facebook{
+background-color: #385998;
+color: white;
+}
+.fa-twitter{
+background-color: #5e7fbe;
+color: white;
+}
+.fa-linkedin{
+background-color: #1548a8;
+color: white;
+}
+.fa-instagram{
+background-color: #125688;
+color: white;
+}
+.fa-youtube{
+background-color: red;
+color: white;
+}
+
+@media screen and (max-width: 992px){
+body{
+ font-size: 17px;
+}
+
+.card{
+ padding: 0;
+ width: 100%;
+}
+.row{
+ padding: 0;
+}
+.card-text{
+font-size: 16px;
+}
+
+.section-1, .section-2,.section-3,.section-4,.section-5{
+padding: 10px;
+text-align: center;
+}
+
+.section-1{
+ text-align: center;
+
+}
+.section-1 h1{
+ font-size: 25px;
+}
+
+.section-2{
+ text-align: center;
+ padding: 30px 0px 20px;
+}
+.section-2 h3{
+ font-size: 22px;
+}
+footer{
+ text-align: center;
+}
+.section-4 .btn{
+width: 100%;
+}
+
+}
+</style>
+</head>
